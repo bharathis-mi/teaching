@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:teaching/container_background.dart';
+import 'package:teaching/form_page.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 import 'product_model.dart';
@@ -46,6 +48,26 @@ class Home extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) => const ProductPage()));
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: const Text('Form'),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const FormPage()));
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: const Text('Container'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ContainerBackground()));
               },
             ),
           )
@@ -180,13 +202,19 @@ class _ProductPageState extends State<ProductPage> {
 
  6. FutureBuilder with listview
 
+ */
 
+/*  Mar 09
+ 1. Form Widget and Validation
 
+ 2. Snackbar
+ 
+ 3.  Container with Background
 
+ 4.  Expanded Widget and Spacer
 
+ 5.  
 
-
-
-
-
+ 6. 
+ 
  */
