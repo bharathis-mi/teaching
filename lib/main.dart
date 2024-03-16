@@ -4,6 +4,7 @@ import 'package:teaching/container_background.dart';
 import 'package:teaching/form_page.dart';
 import 'package:transparent_image/transparent_image.dart';
 
+import 'home.dart';
 import 'product_model.dart';
 import 'service.dart';
 
@@ -16,63 +17,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Home(),
-    );
-  }
-}
-
-class Home extends StatelessWidget {
-  const Home({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Card(
-            child: ListTile(
-              title: const Text('Login Page'),
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const LoginPage()));
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              title: const Text('Product'),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const ProductPage()));
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              title: const Text('Form'),
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const FormPage()));
-              },
-            ),
-          ),
-          Card(
-            child: ListTile(
-              title: const Text('Container'),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const ContainerBackground()));
-              },
-            ),
-          )
-        ],
-      ),
+    return MaterialApp(
+      theme: ThemeData(colorSchemeSeed: Colors.pink.shade900),
+      home: const Home(),
     );
   }
 }
@@ -211,10 +158,5 @@ class _ProductPageState extends State<ProductPage> {
  
  3.  Container with Background
 
- 4.  Expanded Widget and Spacer
-
- 5.  
-
- 6. 
- 
+ 4.  Expanded Widget and Spacer 
  */
