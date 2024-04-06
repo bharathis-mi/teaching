@@ -27,7 +27,8 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
             ),
             IconButton(
               onPressed: () {},
-              icon: const Icon(Icons.accessible),
+              icon:
+                  const Badge(label: Text('1'), child: Icon(Icons.accessible)),
             ),
             PopupMenuButton<String>(
               padding: EdgeInsets.zero,

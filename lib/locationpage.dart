@@ -60,3 +60,6 @@ class _LocationPageState extends State<LocationPage> {
     return distance <= 1000;
   }
 }
+
+
+// https://flutter.github.io/samples/#
