@@ -22,10 +22,10 @@ class _LocationPageState extends State<LocationPage> {
               if (isUserWithinRadius(location.latitude!, location.longitude!,
                   12.978073, 80.136841)) {
                 ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                    content: Text('You are not allowed to take attendance')));
+                    content: Text('You are allowed to take attendance')));
               } else {
                 ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                    content: Text('You are allowed to take attendance')));
+                    content: Text('You are not allowed to take attendance')));
               }
             }
           },
