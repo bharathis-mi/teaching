@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:teaching/container_background.dart';
 import 'package:teaching/form_page.dart';
+import 'package:teaching/locationpage.dart';
 import 'package:teaching/main.dart';
 import 'package:teaching/scaffold_page.dart';
 
@@ -61,6 +62,17 @@ class Home extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) => const ScaffoldPage()));
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: const Text('Location'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const LocationPage()));
               },
             ),
           )
